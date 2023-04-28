@@ -16,7 +16,7 @@ export default defineConfig({
     nav: useNav(),
     sidebar: useSidebar(),
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/GoogooFly/donut' }
+      { icon: 'github', link: 'https://github.com/GoogooFly' }
     ]
   }
 })

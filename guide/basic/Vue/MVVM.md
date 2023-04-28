@@ -1,6 +1,6 @@
 # 理解 MVVM {#MVVM}
 
-![MVVM](./../../../assets/MVVM.jpg)
+![MVVM](./../../../assets/vue/MVVM.jpg)
 
 ## 如何理解 MVVM {#understand-MVVM}
 
@@ -14,7 +14,7 @@ MVVM 的核心是提供对 View 和 ViewModel 的双向数据绑定，当数据�
 
 ## MVVM 与 MVC 有什么区别 {#difference-MVC-MVVM}
 
-![MVVM](./../../../assets/MVC.jpg)
+![MVVM](./../../../assets/vue/MVC.jpg)
 
 都是一种设计思想
 

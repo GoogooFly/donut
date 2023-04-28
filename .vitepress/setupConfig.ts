@@ -50,6 +50,7 @@ const useSidebar = (): DefaultTheme.Sidebar => {
             { text: '生命周期', link: '/guide/basic/Vue/PLC' },
             { text: 'Vue 脚手架', link: '/guide/basic/Vue/scaffold' },
             { text: '组件', link: '/guide/basic/Vue/components' },
+            { text: 'Vuex', link: '/guide/basic/Vue/Vuex' },
         ],
         '/guide/basic/HtmlCss/': [
             { text: 'HTML', link: '/guid/basic/HtmlCss/' },
