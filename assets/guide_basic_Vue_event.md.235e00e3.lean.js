@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as l,O as n}from"./chunks/framework.bc5c4927.js";const C=JSON.parse('{"title":"事件处理","description":"","frontmatter":{},"headers":[],"relativePath":"guide/basic/Vue/event.md"}'),o={name:"guide/basic/Vue/event.md"},t=n("",20),p=[t];function e(c,r,D,y,i,F){return l(),a("div",null,p)}const d=s(o,[["render",e]]);export{C as __pageData,d as default};

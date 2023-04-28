@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as n,O as l}from"./chunks/framework.bc5c4927.js";const C=JSON.parse('{"title":"Vue 简介","description":"","frontmatter":{},"headers":[],"relativePath":"guide/basic/Vue/index.md"}'),e={name:"guide/basic/Vue/index.md"},o=l("",8),p=[o];function t(c,r,i,D,y,F){return n(),a("div",null,p)}const d=s(e,[["render",t]]);export{C as __pageData,d as default};
