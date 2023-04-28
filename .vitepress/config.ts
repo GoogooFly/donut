@@ -4,6 +4,7 @@ import { useSetupConfig } from './setupConfig';
 const { useHead, useNav, useSidebar } = useSetupConfig();
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base:"/donut/",
   title: "Donut 笔记文档",
   description: "静态笔记文档站点",
   head: useHead(),
