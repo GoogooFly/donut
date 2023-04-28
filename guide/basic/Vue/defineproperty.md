@@ -16,9 +16,9 @@ Object.defineProperty(obj, prop, descriptor)
 
 ### 参数
 
-| 属性           | 注释                             |
-| ------------- |:-------------------------------: |
-| obj           | 要定义属性的对象。                  |
+| 属性           | 注释                              |
+| ------------- | :-------------------------------: |
+| obj           |  要定义属性的对象。                 |
 | prop          | 要定义或修改的属性的名称或 Symbol 。 |
 | descriptor    | 要定义或修改的属性描述符。           |
 
@@ -65,3 +65,33 @@ Object.defineProperty(obj, 'prop', {
 - 通过 Object.defineProperty() 把 data 对象中所有属性添加到 vm 上
 - 为每一个添加到 vm 上的属性，都指定一个 getter/setter
 - 在 getter/setter 内部去操作（读/写）data 中对应的属性
+
+## Vue 监视数据的原理
+
+Vue 会监视 data 中所有层级的数据
+
+### 如何监测对象中的数据
+
+通过 `setter` 实现检测，且要在 new Vue 时就要传入需要监测的数据
+
+对象中后追加的属性，Vue 默认不做响应式处理
+
+如需给后追加的属性添加响应式，则需使用以下 API：
+
+`Vue.set(target, key, value)` 或 `vm.$set(target, key, value)`
+
+### 如何监测数组中的数据
+
+通过包裹数组更新元素的方法实现，本质就是做了两件事：
+
+1. 调用原生对应的方法对数组进行更新
+2. 重新解析模板进而更新页面
+
+### 在修改数组中的某一个元素时一定要使用以下方法
+
+- `push()`、`pop()`、`shift()`、`unshift`、`splice()`、`sort()`、`reverse()`
+- `Vue.set()` 或 `vm.$set()`
+
+:::tip 注意
+`Vue.set()` 和 `vm.$set()` 不能给 Vue 或 vm 的根数据对象添加属性
+:::

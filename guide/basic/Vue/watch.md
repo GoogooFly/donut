@@ -65,8 +65,6 @@ vm.$watch('isHot',function(newValue,oldValue) {
 - watch 能完成的功能，computed 不一定能完成，例如：watch 可以进行异步倒错
 
 :::tip 注意
-
 - 所被 Vue 管理的函数，最好写成普通函数，这样 this 的指向才是 vm 或 组件实例对象
 - 所有不被 Vue 所管理的函数（定时器的回调函数、ajax 的回调函数、Promise 的回调函数等），最好写成箭头函数，这样 this 的指向才是 vm 或 组件实例对象
-
 :::

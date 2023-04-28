@@ -43,7 +43,13 @@ const useSidebar = (): DefaultTheme.Sidebar => {
             { text: '事件处理', link: '/guide/basic/Vue/event' },
             { text: '计算属性', link: '/guide/basic/Vue/computed' },
             { text: '监视属性', link: '/guide/basic/Vue/watch' },
+            { text: '过滤属性', link: '/guide/basic/Vue/filter' },
             { text: '动态样式绑定', link: '/guide/basic/Vue/bindStyle' },
+            { text: '内置指令', link: '/guide/basic/Vue/builtInDirective' },
+            { text: '自定义指令', link: '/guide/basic/Vue/customDirective' },
+            { text: '生命周期', link: '/guide/basic/Vue/PLC' },
+            { text: 'Vue 脚手架', link: '/guide/basic/Vue/scaffold' },
+            { text: '组件', link: '/guide/basic/Vue/components' },
         ],
         '/guide/basic/HtmlCss/': [
             { text: 'HTML', link: '/guid/basic/HtmlCss/' },
