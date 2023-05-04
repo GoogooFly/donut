@@ -51,6 +51,7 @@ const useSidebar = (): DefaultTheme.Sidebar => {
             { text: 'Vue 脚手架', link: '/guide/basic/Vue/scaffold' },
             { text: '组件', link: '/guide/basic/Vue/components' },
             { text: 'Vuex', link: '/guide/basic/Vue/Vuex' },
+            { text: '路由', link: '/guide/basic/Vue/router' },
         ],
         '/guide/basic/HtmlCss/': [
             { text: 'HTML', link: '/guid/basic/HtmlCss/' },
