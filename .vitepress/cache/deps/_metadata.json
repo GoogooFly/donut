@@ -1,13 +1,38 @@
 {
-  "hash": "654ce468",
-  "browserHash": "94003e7c",
+  "hash": "d71c14c2",
+  "browserHash": "44070423",
   "optimized": {
+    "windicss/utils/style": {
+      "src": "../../../node_modules/.pnpm/windicss@3.5.6/node_modules/windicss/utils/style/index.mjs",
+      "file": "windicss_utils_style.js",
+      "fileHash": "51293cfb",
+      "needsInterop": false
+    },
+    "windicss": {
+      "src": "../../../node_modules/.pnpm/windicss@3.5.6/node_modules/windicss/index.mjs",
+      "file": "windicss.js",
+      "fileHash": "6c9b19ce",
+      "needsInterop": false
+    },
     "vue": {
       "src": "../../../node_modules/.pnpm/vue@3.2.47/node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "caab9940",
+      "fileHash": "f245391e",
+      "needsInterop": false
+    },
+    "naive-ui": {
+      "src": "../../../node_modules/.pnpm/naive-ui@2.34.3_vue@3.2.47/node_modules/naive-ui/es/index.js",
+      "file": "naive-ui.js",
+      "fileHash": "038a551f",
       "needsInterop": false
     }
   },
-  "chunks": {}
+  "chunks": {
+    "chunk-GOZHMCMR": {
+      "file": "chunk-GOZHMCMR.js"
+    },
+    "chunk-4EOJPDL2": {
+      "file": "chunk-4EOJPDL2.js"
+    }
+  }
 }

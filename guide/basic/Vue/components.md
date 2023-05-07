@@ -8,7 +8,7 @@
 
 组件系统让我们可以用独立可复用的小组件来构建大型应用，几乎任意类型的应用的界面都可以抽象为一个组件树
 
-![component](/assets/vue/component.jpg)
+<n-image src="./../../../assets/vue/component.jpg" />
 
 - 假设这是一个按钮组件
 ```vue
@@ -241,7 +241,7 @@ export default {
 
 - 在合适的时候给元素加上样式类名
 
-![过渡与动画](/assets/vue/transition.png)
+<n-image src="./../../../assets/vue/transition.png" />
 
 ### 样式
 

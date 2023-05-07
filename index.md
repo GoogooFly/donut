@@ -21,17 +21,45 @@ hero:
       link: 'https://github.com/GoogooFly/donut'
 
 features:
-  - icon: 💡
-    title: 关注你的内容
-    details: 只需要 Markdown 就能毫不费力地创建美丽网站。
-  - icon: ⚡️
-    title: 享受 Vite DX
-    details: 即时服务器启动，闪电般的快速热点更新，并利用 Vite 生态系统插件。
-  - icon: 🛠️
-    title: 使用 Vue 自定义
-    details: 在 Markdown 中直接使用 Vue 语法和组件，或者使用 Vue 构建自定义主题。
-  - icon: 📦
-    title: 快速站点
-    details: 快速初始加载与静态 HTML，快速后加载导航与客户端路由。
+  - icon: <img src="../../../assets/javascript/JavaScript.svg" />
+    title: JavaScript
+    details: JavaScript 是一门跨平台、面向对象的脚本语言
+    link: /guide/basic/Vue/
+    linkText: 前往笔记
+  - icon: <img src="../../../assets/typescript/TypeScript.svg" />
+    title: TypeScript
+    details: TypeScript 带来了可选的静态类型检查以及最新的ECMAScript特性
+    link: /guide/basic/Vue/
+    linkText: 前往笔记
+  - icon: <img src="../../../assets/vue/Vue.svg" />
+    title: Vue
+    details: Vue.js - 渐进式的 JavaScript 框架
+    link: /guide/basic/Vue/
+    linkText: 前往笔记
+  - icon: <img src="../../../assets/react/React.svg" />
+    title: React
+    details: 用于构建 Web 和原生交互界面的库
+    link: /guide/basic/React/
+    linkText: 前往笔记
+  - icon: <img src="../../../assets/electron/Electron.svg" />
+    title: Electron
+    details: 使用 JavaScript、HTML 和 CSS 构建跨平台桌面应用程序
+    link: /guide/basic/Vue/
+    linkText: 前往笔记
+  - icon: <img src="../../../assets/webpack/Webpack.svg" />
+    title: Webpack
+    details: Webpack 是一个模块打包器
+    link: /guide/basic/Vue/
+    linkText: 前往笔记
+  - icon: <img src="../../../assets/vite/Vite.svg" />
+    title: Vite
+    details: Bite是下一代前端开发与构建工具
+    link: /guide/basic/Vue/
+    linkText: 前往笔记
+  - icon: <img src="../../../assets/node/Node.png" />
+    title: Node
+    details: Node.js® 是一个 JavaScript 运行时构建在 Chrome 的 V8 JavaScript 引擎
+    link: /guide/basic/Vue/
+    linkText: 前往笔记
 ---
 

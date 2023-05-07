@@ -6,7 +6,7 @@
 
 ## 示意图
 
-![Vuex](../../../assets/vue/vuex.png)
+<n-image src="../../../assets/vue/vuex.png" />
 
 ## 使用步骤
 
