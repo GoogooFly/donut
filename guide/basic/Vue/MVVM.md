@@ -1,4 +1,4 @@
-# 理解 MVVM {#MVVM}
+# MVVM {#MVVM}
 
 <n-image src="./../../../assets/vue/MVVM.jpg" />
 
@@ -16,12 +16,10 @@ MVVM 的核心是提供对 View 和 ViewModel 的双向数据绑定，当数据�
 
 <n-image src="./../../../assets/vue/MVC.jpg" />
 
-都是一种设计思想
+1. MVC 是 Model-View-Contoller 的简写，即模型-视图-控制器
 
-MVC 是 Model-View-Contoller 的简写，即模型-视图-控制器
+2. MVC 的目的是将 Model 和 View 的代码分离
 
-MVC 的目的是将 M 和 V 的代码分离
+3. MVC 是单向通信，也就是 View 和 Model 必须通过 Controller 来承上启下
 
-MVC 是单向通信，也就是 View 和 Model 必须通过 Controller 来承上启下
-
-MVVM 实现了 View 和 Model 的自动同步，当 Model 的属性改变时，不再需要自己手动操作 DOM，提高了页面渲染性能
+4. MVVM 实现了 View 和 Model 的自动同步，当 Model 的属性改变时，不再需要自己手动操作 DOM，提高了页面渲染性能
