@@ -16,7 +16,7 @@
 
 1. 声明变量
 
-变量声明后，它的值为undefined
+变量声明后，它的值为 undefined
 
 ```js
 var 变量名;
@@ -128,7 +128,7 @@ var b;
 console.(a,b);
 a = 1;
 b = 3;
-// 显示undefined
+// 显示 undefined
 ```
 
 ## 定义多个同名变量

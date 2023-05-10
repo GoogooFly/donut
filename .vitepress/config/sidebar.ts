@@ -38,5 +38,17 @@ export const sidebar: DefaultTheme.Sidebar = {
         { text: '声明变量', link: '/guide/basic/javascript/variable' },
         { text: '数据类型', link: '/guide/basic/javascript/dataType' },
         { text: '运算符', link: '/guide/basic/javascript/operator' },
+        { text: '流程控制', link: '/guide/basic/javascript/processControl' },
+        { text: '函数语法', link: '/guide/basic/javascript/func' },
+        { text: 'Object 和 Function', link: '/guide/basic/javascript/objFunc' },
+        { text: 'Array 构造器', link: '/guide/basic/javascript/array' },
+        { text: '原始类型包装器', link: '/guide/basic/javascript/wrapper' },
+        { text: 'Math 对象', link: '/guide/basic/javascript/mathObj' },
+        { text: 'Date 构造函数', link: '/guide/basic/javascript/dateFunc' },
+        { text: '正则表达式', link: '/guide/basic/javascript/regular' },
+        { text: '错误处理', link: '/guide/basic/javascript/errorHandle' },
+        { text: 'DOM 核心', link: '/guide/basic/javascript/domCore' },
+        { text: 'DOM 事件', link: '/guide/basic/javascript/domEvent' },
+        { text: 'BOM', link: '/guide/basic/javascript/bom' },
     ]
 }
