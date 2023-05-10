@@ -1,0 +1,98 @@
+<template>
+    <n-grid cols="2 s:3 m:4 l:4 xl:4 2xl:6" x-gap="10" y-gap="10" responsive="screen">
+        <n-grid-item v-for="({index, href, title, desiction, icon}) in data" :key="index">
+            <div class="li">
+                <div class="container">
+                    <img class="logo" :src="icon" />
+                    <div class="header">
+                        <n-ellipsis :line-clamp="1">
+                            <h4 class="title">
+                                <a :href="href">{{ title }}</a>
+                            </h4>
+                        </n-ellipsis>
+                        
+                        <div class="copy"><Copy theme="outline" size="16" /></div>
+                    </div>
+                </div>
+                <n-ellipsis class="desiction" :line-clamp="1" expand-trigger="click" :tooltip="false"> {{ desiction }}</n-ellipsis>
+            </div>
+        </n-grid-item>
+    </n-grid>
+</template>
+
+<script setup lang="ts">
+import {Copy} from '@icon-park/vue-next';
+import type { TState } from './state';
+
+withDefaults(defineProps<{
+    data:TState
+}>(), {});
+
+</script>
+
+<style lang="less" scoped>
+.li {
+    min-width: 100%;
+    min-height: 60px;
+    padding: 8px 13px 6px 13px;
+    background-color: var(--vp-c-bg-soft);
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: transform .3s ease, box-shadow .3s ease;
+    display: flex;
+    flex-direction: column;
+
+
+    &:hover {
+        transform: translateY(-7px);
+        box-shadow: 0px 0px 6px rgba(0,0,0,.12);
+    }
+
+    .logo {
+        width: 32px;
+        height: 32px;
+        margin-right: 12px;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 4px;
+
+        .header {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .title {
+                font-size: 17px;
+                font-weight: 700;
+                a {
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+            .copy {
+                padding: 7px;
+                border-radius: 4px;
+                transition: background-color 0.3s;
+                color: var(--vp-c-text-2);
+
+                &:hover {
+                    background-color: rgba(125, 124, 124, 0.1);
+                }
+            }
+        }
+
+
+
+    }
+
+    .desiction {
+        color: var(--vp-c-text-2);
+        font-size: 13px;
+    }
+}
+</style>

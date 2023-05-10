@@ -18,20 +18,31 @@ export const nav: DefaultTheme.NavItem[] = [
             { text: 'Express', link: '/guide/basic/express/', activeMatch: '/guide/basic/express/' },
         ]
     },
-    { 
-        text: '后端访探', 
-        items:[
+    {
+        text: '后端访探',
+        items: [
             { text: 'Java', link: '/guide/basic/HtmlCss/', activeMatch: '/guide/basic/HtmlCss/' },
             { text: 'MySQL', link: '/guide/basic/HtmlCss/', activeMatch: '/guide/basic/HtmlCss/' },
             { text: 'JDBC', link: '/guide/basic/HtmlCss/', activeMatch: '/guide/basic/HtmlCss/' },
             { text: 'JavaWeb', link: '/guide/basic/HtmlCss/', activeMatch: '/guide/basic/HtmlCss/' },
             { text: 'Maven', link: '/guide/basic/HtmlCss/', activeMatch: '/guide/basic/HtmlCss/' },
             { text: 'SpringBoot', link: '/guide/basic/HtmlCss/', activeMatch: '/guide/basic/HtmlCss/' },
-        ] 
+        ]
     },
     { text: '源码阅读', link: '/markdown-examples' },
     { text: '奇淫技巧', link: '/markdown-examples' },
-    { text: '面试题', link: '/markdown-examples' },
-    { text: '提效工具', link: '/markdown-examples' },
+    {
+        text: '面试题',
+        items: [
+            { text: 'HTML', link: '/guide/interviewQuestion/html', activeMatch: '/guide/interviewQuestion/html' },
+            { text: 'CSS', link: '/guide/interviewQuestion/css', activeMatch: '/guide/interviewQuestion/css' },
+            { text: 'JavaScript', link: '/guide/interviewQuestion/javascript', activeMatch: '/guide/interviewQuestion/javascript' },
+            { text: 'Vue', link: '/guide/interviewQuestion/vue', activeMatch: '/guide/interviewQuestion/vue' },
+            { text: 'React', link: '/guide/interviewQuestion/react', activeMatch: '/guide/interviewQuestion/react' },
+            { text: 'Vite', link: '/guide/interviewQuestion/vite', activeMatch: '/guide/interviewQuestion/vite' },
+            { text: 'Webpack', link: '/guide/interviewQuestion/webpack', activeMatch: '/guide/interviewQuestion/webpack' },
+        ]
+    },
+    { text: '提效工具', link: '/guide/effect/' },
     { text: '踩坑记录', link: '/markdown-examples' },
 ]

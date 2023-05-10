@@ -6,7 +6,7 @@
 
 ## 示意图
 
-<n-image src="../../../assets/vue/vuex.png" />
+<n-image src="../../../assets/images/vuex.png" />
 
 ## 使用步骤
 

@@ -8,7 +8,7 @@ React 组件中包含一系列钩子函数（生命周期回调函数）会在�
 
 ## 旧生命周期
 
-<n-image src="../../../assets/react/oldPLC.jpg" />
+<n-image src="../../../assets/images/react-old-lifecycle.jpg" />
 
 - 初始化阶段 `ReactDOM.render()`
 
@@ -39,7 +39,7 @@ React 组件中包含一系列钩子函数（生命周期回调函数）会在�
 
 ## 新生命周期
 
-<n-image src="../../../assets/react/newPLC.jpg" />
+<n-image src="../../../assets/images/react-new-lifecycle.jpg" />
 
 - 初始化阶段 `ReactDOM.render()`
 

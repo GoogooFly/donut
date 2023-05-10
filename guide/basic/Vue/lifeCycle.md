@@ -16,4 +16,4 @@
 - 销毁后自定义事件会失效，但原生 DOM 事件依然有效
 - 一般不会再用 beforeDestroy，因为即使操作数据，也不会再触发更新流程了
 
-<n-image src="./../../../assets/vue/PLC.png" />
+<n-image src="./../../../assets/images/vue-lifecycle.png" />

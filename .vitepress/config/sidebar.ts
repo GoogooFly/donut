@@ -32,6 +32,12 @@ export const sidebar: DefaultTheme.Sidebar = {
     '/guide/basic/htmlCss/': [
         { text: 'CSS 简介', link: '/guide/basic/htmlCss/' },
         { text: '常见样式', link: '/guide/basic/htmlCss/commonCss' },
+        { text: 'CSS 基础', link: '/guide/basic/htmlCss/cssBasics' },
+        { text: 'CSS 浮动', link: '/guide/basic/htmlCss/float' },
+        { text: 'CSS 定位', link: '/guide/basic/htmlCss/position' },
+        { text: 'CSS 选择器', link: '/guide/basic/htmlCss/selector' },
+        { text: 'HTML 基础', link: '/guide/basic/htmlCss/htmlBasics' },
+        { text: 'HTML 其它元素', link: '/guide/basic/htmlCss/htmlOther' },
     ],
     '/guide/basic/javascript/': [
         { text: 'JavaScript 简介', link: '/guide/basic/javascript/' },
@@ -50,5 +56,13 @@ export const sidebar: DefaultTheme.Sidebar = {
         { text: 'DOM 核心', link: '/guide/basic/javascript/domCore' },
         { text: 'DOM 事件', link: '/guide/basic/javascript/domEvent' },
         { text: 'BOM', link: '/guide/basic/javascript/bom' },
+    ],
+    '/guide/basic/typescript/': [
+        { text: 'TypeScript 简介', link: '/guide/basic/typescript/' },
+        { text: '初体验', link: '/guide/basic/typescript/useTS' },
+        { text: '常用类型', link: '/guide/basic/typescript/common' },
+    ],
+    '/guide/basic/webpack/': [
+        { text: 'Webpack 简介', link: '/guide/basic/webpack/' },
     ]
 }

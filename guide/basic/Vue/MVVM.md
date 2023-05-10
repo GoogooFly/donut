@@ -1,6 +1,6 @@
 # MVVM {#MVVM}
 
-<n-image src="./../../../assets/vue/MVVM.jpg" />
+<n-image src="./../../../assets/images/vue-MVVM.jpg" />
 
 ## 如何理解 MVVM {#understand-MVVM}
 
@@ -14,7 +14,7 @@ MVVM 的核心是提供对 View 和 ViewModel 的双向数据绑定，当数据�
 
 ## MVVM 与 MVC 有什么区别 {#difference-MVC-MVVM}
 
-<n-image src="./../../../assets/vue/MVC.jpg" />
+<n-image src="./../../../assets/images/vue-MVC.jpg" />
 
 1. MVC 是 Model-View-Contoller 的简写，即模型-视图-控制器
 
