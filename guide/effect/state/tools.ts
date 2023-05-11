@@ -88,7 +88,7 @@ export const toolsState: TState = [
     {
         index: 12,
         title: "ToDesk",
-        desiction: "ToDesk 远程控制软件是一款稳定流畅的远程控制电脑手机连接软件",
+        desiction: "一款稳定流畅的远程控制电脑手机连接软件",
         href: "https://www.todesk.com/",
         icon: "https://www.todesk.com/favicon.ico",
     },

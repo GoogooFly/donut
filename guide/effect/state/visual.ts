@@ -21,5 +21,12 @@ export const visualState: TState = [
         icon:"https://threejs.org/files/favicon.ico",
         href:"https://echarts.apache.org/zh/index.html",
         desiction:"一个 JavaScript 3d 库"
+    },
+    {
+        index: 3,
+        title: "DataV",
+        icon:"/assets/svg/DataV.ico",
+        href:"http://datav.jiaminghi.com/",
+        desiction:"一个基于 Vue 的大屏数据展示组件库"
     }
 ]

@@ -57,4 +57,32 @@ export const vueState: TState = [
         href: "https://vxetable.cn/#/table/start/install",
         desiction: "一个 Vue 表格解决方案"
     },
+    {
+        index: 7,
+        title: "Element Plus",
+        icon: "https://element-plus.gitee.io/apple-touch-icon.png",
+        href: "https://element-plus.gitee.io/zh-CN/",
+        desiction: "一个基于Vue 3 面向设计师和开发者的组件库"
+    },
+    {
+        index: 8,
+        title: "Ant Design Vue",
+        icon: "https://www.antdv.com/assets/logo.1ef800a8.svg",
+        href: "https://antdv.com/components/overview-cn",
+        desiction: "Ant Design 的 Vue 实现，开发和服务于企业级后台产品"
+    },
+    {
+        index: 9,
+        title: "VuePress",
+        icon: "	https://v2.vuepress.vuejs.org/images/hero.png",
+        href: "https://v2.vuepress.vuejs.org/zh/",
+        desiction: "Vue 驱动的静态网站生成器"
+    },
+    {
+        index: 10,
+        title: "VitePress",
+        icon: "/assets/svg/VitePress.svg",
+        href: "https://vitepress.dev/",
+        desiction: "一个基于 Vite 构建的静态站点生成工具"
+    },
 ]

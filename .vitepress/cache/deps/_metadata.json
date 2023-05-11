@@ -1,35 +1,41 @@
 {
-  "hash": "2a9dd470",
-  "browserHash": "f26d73a7",
+  "hash": "b9bd5e9a",
+  "browserHash": "3bc22c28",
   "optimized": {
     "windicss/utils/style": {
       "src": "../../../node_modules/.pnpm/windicss@3.5.6/node_modules/windicss/utils/style/index.mjs",
       "file": "windicss_utils_style.js",
-      "fileHash": "d11d7645",
+      "fileHash": "91aade72",
       "needsInterop": false
     },
     "windicss": {
       "src": "../../../node_modules/.pnpm/windicss@3.5.6/node_modules/windicss/index.mjs",
       "file": "windicss.js",
-      "fileHash": "b3d44771",
+      "fileHash": "2921df24",
       "needsInterop": false
     },
     "vue": {
       "src": "../../../node_modules/.pnpm/vue@3.2.47/node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "afff3044",
+      "fileHash": "49e81f37",
       "needsInterop": false
     },
     "naive-ui": {
       "src": "../../../node_modules/.pnpm/naive-ui@2.34.3_vue@3.2.47/node_modules/naive-ui/es/index.js",
       "file": "naive-ui.js",
-      "fileHash": "8ef76e93",
+      "fileHash": "e3f24e8c",
       "needsInterop": false
     },
     "@icon-park/vue-next": {
       "src": "../../../node_modules/.pnpm/@icon-park+vue-next@1.4.2_vue@3.2.47/node_modules/@icon-park/vue-next/es/index.js",
       "file": "@icon-park_vue-next.js",
-      "fileHash": "c04eb16a",
+      "fileHash": "a973bda4",
+      "needsInterop": false
+    },
+    "vue-clipboard3": {
+      "src": "../../../node_modules/.pnpm/vue-clipboard3@2.0.0/node_modules/vue-clipboard3/dist/esm/index.js",
+      "file": "vue-clipboard3.js",
+      "fileHash": "85790e38",
       "needsInterop": false
     }
   },

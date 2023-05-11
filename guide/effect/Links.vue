@@ -3,41 +3,52 @@
         <NGridItem v-for="({ index, href, title, desiction, icon }) in data" :key="index">
             <div class="li">
                 <div class="container">
-                    <NImage width="32" height="32" class="logo" :src="icon"
-                        :intersection-observer-options="{ root: null }" lazy preview-disabled />
+                    <NImage width="32" height="32" class="logo" :src="icon" :intersection-observer-options="{ root: null }"
+                        lazy preview-disabled />
                     <div class="header">
                         <NEllipsis :line-clamp="1">
                             <h4 class="title">
                                 <a :href="href" target="_blank">{{ title }}</a>
                             </h4>
                         </NEllipsis>
-                        <div class="copy">
-                            <Copy theme="outline" size="16" />
-                        </div>
+                        <NPopover trigger="hover" placement="top-start">
+                            <template #trigger>
+                                <div class="copy" @click="onCopy(href)">
+                                    <Copy theme="outline" size="16" />
+                                </div>
+                            </template>
+                            <span class="href">{{ href }}</span>
+                        </NPopover>
                     </div>
                 </div>
-                <NEllipsis class="desiction" :line-clamp="1" expand-trigger="click" :tooltip="false"> {{ desiction
-                }}</NEllipsis>
+                <NEllipsis class="desiction" :line-clamp="1" expand-trigger="click" :tooltip="false"> {{ desiction }}
+                </NEllipsis>
             </div>
         </NGridItem>
     </NGrid>
 </template>
 
 <script setup lang="ts">
-import { NGrid, NGridItem, NImage, NEllipsis } from 'naive-ui';
+import { NGrid, NGridItem, NImage, NEllipsis, NPopover } from 'naive-ui';
 import { Copy } from '@icon-park/vue-next';
 import type { TState } from './state/state';
+import useClipboard from 'vue-clipboard3';
 
+const {toClipboard} = useClipboard();
 withDefaults(defineProps<{
     data: TState
 }>(), {});
 
+function onCopy(href: string){
+    toClipboard(href);
+//   message.success('复制成功！');
+}
 </script>
 
 <style lang="less" scoped>
 .li {
     min-width: 100%;
-    min-height: 60px;
+    min-height: 75px;
     padding: 8px 13px 6px 13px;
     background-color: var(--vp-c-bg-soft);
     border-radius: 4px;
@@ -46,6 +57,7 @@ withDefaults(defineProps<{
     transition: transform .3s ease, box-shadow .3s ease;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
 
     &:hover {
@@ -63,7 +75,7 @@ withDefaults(defineProps<{
     .container {
         display: flex;
         align-items: center;
-        margin-bottom: 7px;
+        margin-bottom: 4px;
 
         .header {
             width: 100%;
@@ -83,9 +95,15 @@ withDefaults(defineProps<{
                     }
                 }
             }
-
+            .href {
+                color: red;
+            }
             .copy {
-                padding: 7px;
+                width: 27px;
+                height: 27px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 border-radius: 4px;
                 transition: background-color 0.3s;
                 color: var(--vp-c-text-2);
@@ -103,6 +121,7 @@ withDefaults(defineProps<{
     .desiction {
         color: var(--vp-c-text-2);
         font-size: 13px;
+        user-select: none;
     }
 }
 </style>
