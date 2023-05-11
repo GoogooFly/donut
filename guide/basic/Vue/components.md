@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import { NImage } from 'naive-ui';
+</script>
+
 # 组件
 
 ## 简介
@@ -8,7 +12,7 @@
 
 组件系统让我们可以用独立可复用的小组件来构建大型应用，几乎任意类型的应用的界面都可以抽象为一个组件树
 
-<n-image src="./../../../assets/images/vue-component.jpg" />
+<NImage src="./../../../assets/images/vue-component.jpg" />
 
 - 假设这是一个按钮组件
 ```vue
@@ -241,7 +245,7 @@ export default {
 
 - 在合适的时候给元素加上样式类名
 
-<n-image src="./../../../assets/images/vue-transition.png" />
+<NImage src="./../../../assets/images/vue-transition.png" />
 
 ### 样式
 

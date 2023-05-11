@@ -15,7 +15,7 @@ hero:
   actions:
     - theme: brand
       text: 开始
-      link: /guide/basic/HtmlCss/
+      link: /guide/effect/
     - theme: alt
       text: 在 GutHub 上查看
       link: 'https://github.com/GoogooFly/donut'

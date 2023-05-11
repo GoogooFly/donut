@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import { NImage } from 'naive-ui';
+</script>
+
 # Vuex
 
 ## 简介
@@ -6,7 +10,7 @@
 
 ## 示意图
 
-<n-image src="../../../assets/images/vuex.png" />
+<NImage src="../../../assets/images/vuex.png" />
 
 ## 使用步骤
 

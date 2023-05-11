@@ -1,31 +1,35 @@
 <template>
-    <n-grid cols="2 s:3 m:4 l:4 xl:4 2xl:6" x-gap="10" y-gap="10" responsive="screen">
-        <n-grid-item v-for="({index, href, title, desiction, icon}) in data" :key="index">
+    <NGrid cols="2 s:3 m:4 l:4 xl:4 2xl:6" x-gap="10" y-gap="10" responsive="screen">
+        <NGridItem v-for="({ index, href, title, desiction, icon }) in data" :key="index">
             <div class="li">
                 <div class="container">
-                    <img class="logo" :src="icon" />
+                    <NImage width="32" height="32" class="logo" :src="icon"
+                        :intersection-observer-options="{ root: null }" lazy preview-disabled />
                     <div class="header">
-                        <n-ellipsis :line-clamp="1">
+                        <NEllipsis :line-clamp="1">
                             <h4 class="title">
-                                <a :href="href">{{ title }}</a>
+                                <a :href="href" target="_blank">{{ title }}</a>
                             </h4>
-                        </n-ellipsis>
-                        
-                        <div class="copy"><Copy theme="outline" size="16" /></div>
+                        </NEllipsis>
+                        <div class="copy">
+                            <Copy theme="outline" size="16" />
+                        </div>
                     </div>
                 </div>
-                <n-ellipsis class="desiction" :line-clamp="1" expand-trigger="click" :tooltip="false"> {{ desiction }}</n-ellipsis>
+                <NEllipsis class="desiction" :line-clamp="1" expand-trigger="click" :tooltip="false"> {{ desiction
+                }}</NEllipsis>
             </div>
-        </n-grid-item>
-    </n-grid>
+        </NGridItem>
+    </NGrid>
 </template>
 
 <script setup lang="ts">
-import {Copy} from '@icon-park/vue-next';
-import type { TState } from './state';
+import { NGrid, NGridItem, NImage, NEllipsis } from 'naive-ui';
+import { Copy } from '@icon-park/vue-next';
+import type { TState } from './state/state';
 
 withDefaults(defineProps<{
-    data:TState
+    data: TState
 }>(), {});
 
 </script>
@@ -46,34 +50,40 @@ withDefaults(defineProps<{
 
     &:hover {
         transform: translateY(-7px);
-        box-shadow: 0px 0px 6px rgba(0,0,0,.12);
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, .12);
     }
 
     .logo {
-        width: 32px;
-        height: 32px;
+        min-width: 32px;
+        max-height: 32px;
         margin-right: 12px;
+        border-radius: 4px;
     }
 
     .container {
         display: flex;
         align-items: center;
-        margin-bottom: 4px;
+        margin-bottom: 7px;
 
         .header {
             width: 100%;
             display: flex;
             align-items: center;
             justify-content: space-between;
+
             .title {
                 font-size: 17px;
-                font-weight: 700;
+
                 a {
+                    color: var(--vp-c-text-1);
+                    font-weight: bold;
+
                     &:hover {
                         text-decoration: none;
                     }
                 }
             }
+
             .copy {
                 padding: 7px;
                 border-radius: 4px;

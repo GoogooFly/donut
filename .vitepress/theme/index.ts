@@ -6,8 +6,6 @@ import './style/index.css'
 import './style/scrollbar.css';
 import 'virtual:windi.css'
 
-import NaiveUI from 'naive-ui';
-
 export default {
   ...Theme,
   Layout: () => {
@@ -21,6 +19,6 @@ export default {
     return h(Theme.Layout, props)
   },
   enhanceApp({ app, router, siteData }) {
-    app.use(NaiveUI);
+    // app.use(NaiveUI);
   }
 }
