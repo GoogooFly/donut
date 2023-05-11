@@ -1,18 +1,18 @@
 <div align="center"> 
-<a href="https://github.com/GoogooFly/donut"> 
-<img alt="Donut Logo" width="200" height="200" src="https://github.com/GoogooFly/donut/blob/master/public/logo-220%C3%97220.svg"> 
-</a> 
+    <a href="https://github.com/GoogooFly/donut"> 
+        <img alt="Donut Logo" width="200" height="200" src="https://www.changtiaoraplanqiu.xyz/images/Donut.svg"> 
+    </a> 
 <br> 
 <br>
 
-[![license](https://github.com/GoogooFly/donut/blob/master/assets/svg/license.svg)](LICENSE)
+[![license](https://www.changtiaoraplanqiu.xyz/images/license.svg)](LICENSE)
 
 <h1>Donut</h1>
 </div>
 
 ## 简介
 
-Donut 是一个免费开源的前端学习笔记。使用了的`vue3`,`vite4`,`TypeScript`等主流技术开发，开箱即用的前端学习文档方案，可用于学习参考。
+Donut 是一个免费开源的前端学习笔记。使用了的`vue3`,`vite4`,`TypeScript`等主流技术开发，开箱即用的前端学习文档方案，用于学习参考。
 
 ## 📥 如何开始编辑
 
