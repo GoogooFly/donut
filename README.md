@@ -1,44 +1,24 @@
-<p align="center">
-  <a href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">
-    <img width="180" src="/public/logo-220×220.svg" alt="Vite logo">
-  </a>
-</p>
-<br/>
-<p align="center">
-  <a href="https://npmjs.com/package/vite"><img src="https://img.shields.io/npm/v/vite.svg" alt="npm package"></a>
-  <a href="https://nodejs.org/en/about/releases/"><img src="https://img.shields.io/node/v/vite.svg" alt="node compatility"></a>
-  <a href="https://app.circleci.com/pipelines/github/vitejs/vite?branch=main"><img src="https://circleci.com/gh/vitejs/vite/tree/main.svg?style=shield" alt="unix build status"></a>
-  <a href="https://ci.appveyor.com/project/yyx990803/vite/branch/main"><img src="https://ci.appveyor.com/api/projects/status/0q4j8062olbcs71l/branch/main?svg=true" alt="windows build status"></a>
-  <a href="https://chat.vitejs.dev"><img src="https://img.shields.io/badge/chat-discord-blue?style=flat&logo=discord" alt="discord chat"></a>
-</p>
-<br/>
+<div align="center"> 
+<a href="https://github.com/GoogooFly/donut"> 
+<img alt="Donut Logo" width="200" height="200" src="https://github.com/GoogooFly/donut/blob/master/public/logo-220%C3%97220.svg"> 
+</a> 
+<br> 
+<br>
 
-# Vite 中文文档
+[![license](https://github.com/GoogooFly/donut/blob/master/assets/svg/license.svg)](LICENSE)
 
-> Vite：下一代前端开发与构建工具
+<h1>Donut</h1>
+</div>
 
-- 💡 极速的开发服务器启动
-- ⚡️ 轻量快速的热模块重载（HMR）
-- 🛠️ 丰富的功能
-- 📦 自带优化的构建
-- 🔩 通用的插件接口
-- 🔑 完全类型化的 API
+## 简介
 
-Vite （法语意为 “迅速”，发音 /vit/）是一种全新的前端构建工具，它极大地改善了前端开发体验。
-
-## 📝 如何参与贡献
-
-目前 Vite 中文文档处于 v3 beta 版本，内容 **每日** 根据英文文档同步更新。
-
-**工作流介绍：** 英文文档的所在 [请点击此链接](https://github.com/vitejs/vite/tree/main/docs)，我们会每天拉取英文版文档内容的更新到 sync-docs 分支，并由印记中文 bot 自动发起 Pull Request，解决 Git 冲突并翻译内容。
-
-贡献指南敬请查看本仓库的 [Wiki](https://github.com/vitejs/docs-cn/wiki) 区。
+Donut 是一个免费开源的前端学习笔记。使用了的`vue3`,`vite4`,`TypeScript`等主流技术开发，开箱即用的前端学习文档方案，可用于学习参考。
 
 ## 📥 如何开始编辑
 
 ```bash
 # 克隆本仓库
-$ git clone https://github.com/vitejs/docs-cn.git
+$ git clone https://github.com/GoogooFly/donut.git
 
 # 安装依赖
 $ npm install
@@ -46,21 +26,11 @@ $ npm install
 $ pnpm i
 
 # 启动开发服务器
-$ pnpm dev
+$ pnpm run dev
 ```
 
 ## 版权声明
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议  (CC BY-NC-SA 4.0) </a>进行许可。
+[MIT](https://github.com/GoogooFly/donut/blob/master/LICENSE)
 
-## 贡献者统计
-
-> 统计规则：所有通过 Pull Request 产生了对 `main` 分支 commit 的贡献者。
-> 
-> 头像图生成逻辑参见：[github-contributor-svg-generator](https://github.com/ShenQingchuan/github-contributor-svg-generator)
-
-<p align="center">
-  <a href="https://cdn.jsdelivr.net/gh/ShenQingchuan/github-contributor-svg-generator@main/.github-contributors/vitejs_docs-cn.svg">
-    <img src="https://cdn.jsdelivr.net/gh/ShenQingchuan/github-contributor-svg-generator@main/.github-contributors/vitejs_docs-cn.svg" />
-  </a>
-</p>
+Copyright (c) 2019-present, Yuxi (Evan) You
