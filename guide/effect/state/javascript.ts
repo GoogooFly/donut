@@ -42,5 +42,12 @@ export const javascriptState: TState = [
         icon :"	https://www.tslang.cn/assets/images/icons/apple-touch-icon-180x180.png",
         href:"https://www.tslang.cn/index.html",
         desiction:"JavaScript 的超集"
+    },
+    {
+        index: 5,
+        title: "Electron",
+        icon :"https://www.electronjs.org/zh/assets/img/favicon.ico",
+        href:"https://www.electronjs.org/zh/",
+        desiction:"一个使用 JavaScript、HTML 和 CSS 构建桌面应用程序的框架"
     }
 ];

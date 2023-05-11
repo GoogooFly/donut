@@ -10,6 +10,7 @@ import { visualState } from './visual';
 import { iconState } from './icon';
 import { communityState } from './community';
 import { toolsState } from './tools';
+import { editorState } from './editor';
 
 export {
     cssState,
@@ -23,5 +24,6 @@ export {
     nodeState,
     iconState,
     communityState,
-    toolsState
+    toolsState,
+    editorState
 }

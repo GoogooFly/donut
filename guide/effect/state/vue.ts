@@ -60,7 +60,7 @@ export const vueState: TState = [
     {
         index: 7,
         title: "Element Plus",
-        icon: "https://element-plus.gitee.io/apple-touch-icon.png",
+        icon: "https://element-plus.gitee.io/images/element-plus-logo-small.svg",
         href: "https://element-plus.gitee.io/zh-CN/",
         desiction: "一个基于Vue 3 面向设计师和开发者的组件库"
     },

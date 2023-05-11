@@ -16,7 +16,8 @@ import {
    packageState,
    iconState,
    communityState,
-   toolsState
+   toolsState,
+   editorState
 } from './state';
 
 </script>
@@ -64,6 +65,10 @@ import {
 ## 可视化
 
 <Links :data="visualState" />
+
+## 编辑器
+
+<Links :data="editorState" />
 
 ## 编译&构建&打包
 
