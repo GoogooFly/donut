@@ -40,3 +40,8 @@ Copyright (c) 2019-present, Yuxi (Evan) You
 感谢所有贡献者!
 
 [![contributors](https://contrib.rocks/image?repo=GoogooFly/donut)](https://github.com/GoogooFly/donut/graphs/contributors)
+
+## 观星者
+
+
+[![观星者](https://starchart.cc/GoogooFly/donut.svg)](https://starchart.cc/GoogooFly/donut)
