@@ -29,11 +29,9 @@ $ pnpm i
 $ pnpm run dev
 ```
 
-## 版权声明
+## 项目状态
 
-[MIT](https://github.com/GoogooFly/donut/blob/master/LICENSE)
-
-Copyright (c) 2019-present, Yuxi (Evan) You
+![Status](https://repobeats.axiom.co/api/embed/c707cc165eb3a23ff7a59f34477553b86069b8f0.svg "Repobeats analytics image")
 
 ## 贡献者
 
@@ -45,3 +43,9 @@ Copyright (c) 2019-present, Yuxi (Evan) You
 
 
 [![观星者](https://starchart.cc/GoogooFly/donut.svg)](https://starchart.cc/GoogooFly/donut)
+
+## 版权声明
+
+[MIT](https://github.com/GoogooFly/donut/blob/master/LICENSE)
+
+Copyright (c) 2019-present, Yuxi (Evan) You
