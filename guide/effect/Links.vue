@@ -29,19 +29,20 @@
 </template>
 
 <script setup lang="ts">
-import { NGrid, NGridItem, NImage, NEllipsis, NPopover } from 'naive-ui';
+import { NGrid, NGridItem, NImage, NEllipsis, NPopover, useMessage } from 'naive-ui';
 import { Copy } from '@icon-park/vue-next';
 import type { TState } from './state/state';
 import useClipboard from 'vue-clipboard3';
 
-const {toClipboard} = useClipboard();
+const { toClipboard } = useClipboard();
+const message = useMessage();
 withDefaults(defineProps<{
     data: TState
 }>(), {});
 
-function onCopy(href: string){
+function onCopy(href: string) {
     toClipboard(href);
-//   message.success('复制成功！');
+    message.success('复制成功！');
 }
 </script>
 
@@ -95,9 +96,11 @@ function onCopy(href: string){
                     }
                 }
             }
+
             .href {
                 color: red;
             }
+
             .copy {
                 width: 27px;
                 height: 27px;

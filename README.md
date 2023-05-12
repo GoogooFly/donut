@@ -12,7 +12,7 @@
 
 ## 简介
 
-Donut 是一个免费开源的前端学习笔记。使用了的`vue3`,`vite4`,`TypeScript`等主流技术开发，开箱即用的前端学习文档方案，用于学习参考。
+Donut 是一个免费开源的前端学习笔记。使用了的`Vue3`,`Vite4`,`TypeScript`,`VitePress`等主流技术开发，开箱即用的前端学习文档方案，用于学习参考。
 
 ## 📥 如何开始编辑
 
@@ -34,3 +34,9 @@ $ pnpm run dev
 [MIT](https://github.com/GoogooFly/donut/blob/master/LICENSE)
 
 Copyright (c) 2019-present, Yuxi (Evan) You
+
+## 贡献者
+
+感谢所有贡献者!
+
+[![contributors](https://contrib.rocks/image?repo=GoogooFly/donut)](https://github.com/GoogooFly/donut/graphs/contributors)

@@ -32,7 +32,7 @@ export const cssState: TState = [
     { 
         index: 4, 
         title: "Less", 
-        icon: "http://lesscss.cn/public/ico/favicon.ico", 
+        icon: "http://lesscss.cn/public/img/less_logo.png", 
         href: "http://lesscss.cn/", 
         desiction: "向后兼容的 CSS 语言扩展" 
     },
