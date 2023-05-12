@@ -21,9 +21,7 @@ Donut 是一个免费开源的前端学习笔记。使用了的`Vue3`,`Vite4`,`T
 $ git clone https://github.com/GoogooFly/donut.git
 
 # 安装依赖
-$ npm install
-# 或者使用 pnpm
-$ pnpm i
+$ pnpm install
 
 # 启动开发服务器
 $ pnpm run dev
