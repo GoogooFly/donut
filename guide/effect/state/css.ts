@@ -11,7 +11,7 @@ export const cssState: TState = [
     { 
         index: 1, 
         title: "TailwindCSS", 
-        icon: "https://www.tailwindcss.cn/apple-touch-icon.png", 
+        icon: "https://www.tailwindcss.cn/favicons/android-chrome-256x256.png?v=3", 
         href: "https://www.tailwindcss.cn/", 
         desiction: "一个功能类优先的 CSS 框架" 
     },

@@ -85,4 +85,11 @@ export const vueState: TState = [
         href: "https://vitepress.dev/",
         desiction: "一个基于 Vite 构建的静态站点生成工具"
     },
+    {
+        index: 10,
+        title: "Arco Design Vue",
+        icon: "https://unpkg.byted-static.com/latest/byted/arco-config/assets/favicon.ico",
+        href: "https://arco.design/vue/docs/start",
+        desiction: "一个基于 Vue 的字节跳动出品的企业级设计系统"
+    },
 ]

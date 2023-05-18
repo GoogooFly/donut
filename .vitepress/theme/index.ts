@@ -6,6 +6,7 @@ import './style/index.css'
 import './style/scrollbar.css';
 import 'virtual:windi.css'
 import { NConfigProvider, darkTheme, lightTheme, NMessageProvider } from 'naive-ui';
+import { setupGlobDirectives } from '../../directives';
 
 export default {
   ...Theme,
@@ -21,6 +22,6 @@ export default {
     return h(NConfigProvider, { theme: darkTheme }, () => h(NMessageProvider, null, () => h(Theme.Layout, props)))
   },
   enhanceApp({ app, router, siteData }) {
-    // app.use(NaiveUI);
+    setupGlobDirectives(app); // 初始化自定义指令
   }
 }

@@ -50,4 +50,11 @@ export const reactState: TState = [
         href: "https://ahooks.js.org/zh-CN/",
         desiction: "一套高质量可靠的 React Hooks 库"
     },
+    {
+        index: 6,
+        title: "Arco Design React",
+        icon: "https://unpkg.byted-static.com/latest/byted/arco-config/assets/favicon.ico",
+        href: "https://arco.design/react/docs/start",
+        desiction: "一个基于 React 的字节跳动出品的企业级设计系统"
+    },
 ]

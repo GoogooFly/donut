@@ -3,26 +3,33 @@
         <NGridItem v-for="({ index, href, title, desiction, icon }) in data" :key="index">
             <div class="li">
                 <div class="container">
-                    <NImage width="32" height="32" class="logo" :src="icon" :intersection-observer-options="{ root: null }"
-                        lazy preview-disabled />
-                    <div class="header">
+                    <a :href="href" target="_blank" class="header">
+                        <NImage :width="32" :height="32" class="logo" v-lazyload="icon" preview-disabled />
                         <NEllipsis :line-clamp="1">
-                            <h4 class="title">
-                                <a :href="href" target="_blank">{{ title }}</a>
-                            </h4>
+                            <h4>{{ title }}</h4>
                         </NEllipsis>
-                        <NPopover trigger="hover" placement="top-start">
-                            <template #trigger>
-                                <div class="copy" @click="onCopy(href)">
-                                    <Copy theme="outline" size="16" />
-                                </div>
-                            </template>
-                            <span class="href">{{ href }}</span>
-                        </NPopover>
-                    </div>
+                    </a>
+                    <NEllipsis class="desiction" :line-clamp="1" expand-trigger="click" :tooltip="false"> {{ desiction }}
+                    </NEllipsis>
                 </div>
-                <NEllipsis class="desiction" :line-clamp="1" expand-trigger="click" :tooltip="false"> {{ desiction }}
-                </NEllipsis>
+                <div class="tools">
+                    <NPopover trigger="hover" placement="top-start">
+                        <template #trigger>
+                            <div class="icon" @click="onCopy(href)">
+                                <Copy theme="outline" />
+                            </div>
+                        </template>
+                        <span>{{ href }}</span>
+                    </NPopover>
+                    <NPopover trigger="hover" placement="top-start">
+                        <template #trigger>
+                            <div class="icon" @click="onCopy(href)">
+                                <Instruction theme="outline" />
+                            </div>
+                        </template>
+                        <span>打开使用文档</span>
+                    </NPopover>
+                </div>
             </div>
         </NGridItem>
     </NGrid>
@@ -30,7 +37,7 @@
 
 <script setup lang="ts">
 import { NGrid, NGridItem, NImage, NEllipsis, NPopover, useMessage } from 'naive-ui';
-import { Copy } from '@icon-park/vue-next';
+import { Copy, Instruction } from '@icon-park/vue-next';
 import type { TState } from './state/state';
 import useClipboard from 'vue-clipboard3';
 
@@ -50,14 +57,13 @@ function onCopy(href: string) {
 .li {
     min-width: 100%;
     min-height: 75px;
-    padding: 8px 13px 6px 13px;
+    padding: 8px 13px 8px 15px;
     background-color: var(--vp-c-bg-soft);
     border-radius: 4px;
     cursor: pointer;
     border: 1px solid transparent;
     transition: transform .3s ease, box-shadow .3s ease;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
 
 
@@ -67,64 +73,64 @@ function onCopy(href: string) {
     }
 
     .logo {
+        width: 32px;
+        height: 32px;
         min-width: 32px;
         max-height: 32px;
-        margin-right: 12px;
         border-radius: 4px;
+        margin-right: 12px;
     }
 
     .container {
         display: flex;
-        align-items: center;
-        margin-bottom: 4px;
+        flex-direction: column;
+        justify-content: space-between;
 
         .header {
+            color: var(--vp-c-text-1);
+            font-weight: bold;
+            font-size: 17px;
             width: 100%;
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            margin-bottom: 4px;
 
-            .title {
-                font-size: 17px;
-
-                a {
-                    color: var(--vp-c-text-1);
-                    font-weight: bold;
-
-                    &:hover {
-                        text-decoration: none;
-                    }
-                }
-            }
-
-            .href {
-                color: red;
-            }
-
-            .copy {
-                width: 27px;
-                height: 27px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 4px;
-                transition: background-color 0.3s;
-                color: var(--vp-c-text-2);
-
-                &:hover {
-                    background-color: rgba(125, 124, 124, 0.1);
-                }
+            &:hover {
+                text-decoration: none;
             }
         }
 
-
-
+        .desiction {
+            color: var(--vp-c-text-2);
+            font-size: 13px;
+            user-select: none;
+        }
     }
 
-    .desiction {
-        color: var(--vp-c-text-2);
-        font-size: 13px;
-        user-select: none;
+    .tools {
+        padding-left: 2px;
+
+        .icon {
+            width: 28px;
+            min-width: 28px;
+            height: 28px;
+            font-size: 17px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+            color: var(--vp-c-text-2);
+
+            &:hover {
+                background-color: rgba(125, 124, 124, 0.1);
+            }
+        }
     }
+
+
+
+
+
 }
 </style>
