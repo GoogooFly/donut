@@ -57,4 +57,11 @@ export const reactState: TState = [
         href: "https://arco.design/react/docs/start",
         desiction: "一个基于 React 的字节跳动出品的企业级设计系统"
     },
+    {
+        index: 7,
+        title: "TDesign",
+        icon: "https://tdesign.tencent.com/favicon.ico",
+        href: "https://tdesign.tencent.com/?utm_source=tdc&utm_medium=tdc.nav",
+        desiction: "TDesign 是腾讯开源的企业级设计体系，提供了统一价值观，一致的设计语言和视觉风格，和开箱即用的 UI 组件库。"
+    },
 ]

@@ -49,5 +49,12 @@ export const javascriptState: TState = [
         icon :"https://www.electronjs.org/zh/assets/img/favicon.ico",
         href:"https://www.electronjs.org/zh/",
         desiction:"一个使用 JavaScript、HTML 和 CSS 构建桌面应用程序的框架"
+    },
+    {
+        index: 5,
+        title: "LogicFlow",
+        icon :"https://docs.logic-flow.cn/docs/_images/logo.svg",
+        href:"https://docs.logic-flow.cn/docs/#/zh/",
+        desiction:"一款流程图编辑框架"
     }
 ];
