@@ -54,7 +54,7 @@ import {
 
 <Links :data="cssState" />
 
-## 小程序 相关
+## App&小程序 相关
 
 <Links :data="miniState" />
 

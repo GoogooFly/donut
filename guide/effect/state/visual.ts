@@ -35,5 +35,19 @@ export const visualState: TState = [
         icon:"/assets/svg/VueECharts.svg",
         href:"https://github.com/ecomfe/vue-echarts/blob/main/README.zh-Hans.md",
         desiction:"一个基于 Vue2、Vue3 的 ECharts 库"
+    },
+    {
+        index: 5,
+        title: "LogicFlow",
+        icon :"https://docs.logic-flow.cn/docs/_images/logo.svg",
+        href:"https://docs.logic-flow.cn/docs/#/zh/",
+        desiction:"一款流程图编辑框架"
+    },
+    {
+        index: 6,
+        title: "uCharts",
+        icon :"https://www.ucharts.cn/v2/static/favicon.ico",
+        href:"https://www.ucharts.cn/v2/#/",
+        desiction:"一款基于 canvas API 开发的适用于所有前端应用的图表库，开发者编写一套代码，可运行到 Web、iOS、Android（基于 uni-app / taro ）、以及各种小程序（微信/支付宝/百度/头条/飞书/QQ/快手/钉钉/淘宝/京东/360）、快应用等更多支持 canvas API 的平台"
     }
 ]
